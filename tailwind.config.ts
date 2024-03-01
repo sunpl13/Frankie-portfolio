@@ -12,6 +12,12 @@ const config: Config = {
         pretendard: "var(--font-pretendard)",
         calibre: "var(--font-calibre)",
       },
+      colors: {
+        "green-100": "#98f211",
+        "gray-40": "rgba(255, 255, 255, 0.4)",
+        "gray-60": "rgba(240, 240, 240, 0.6)",
+        "gray-30": "rgba(240, 240, 240, 0.3)",
+      },
     },
   },
   plugins: [],
