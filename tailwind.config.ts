@@ -17,6 +17,19 @@ const config: Config = {
         "gray-40": "rgba(255, 255, 255, 0.4)",
         "gray-60": "rgba(240, 240, 240, 0.6)",
         "gray-30": "rgba(240, 240, 240, 0.3)",
+        "black-80": "#363636",
+      },
+      fontSize: {
+        "6.5xl": "6.5625rem",
+      },
+      width: {
+        "224": "56rem",
+      },
+      height: {
+        "112": "28rem",
+      },
+      borderRadius: {
+        "224": "56rem",
       },
     },
   },

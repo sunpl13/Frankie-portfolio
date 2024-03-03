@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { calibre, pretendard } from "@/styles/fonts";
+import GNB from "@/components/GNB";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -13,8 +14,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${calibre.variable} ${pretendard.variable}`}>{children}</body>
+    <html lang="ko">
+      <body className={`${calibre.variable} ${pretendard.variable}`}>
+        <GNB />
+        {children}
+      </body>
     </html>
   );
 }

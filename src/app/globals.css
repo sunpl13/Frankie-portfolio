@@ -6,6 +6,20 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --green-100: #9bfe03;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+main {
+  height: calc(100% - 6rem);
+}
+
+section {
+  height: 100%;
 }
 
 @media (prefers-color-scheme: dark) {
