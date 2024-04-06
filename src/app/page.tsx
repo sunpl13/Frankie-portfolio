@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Profile from "@/components/Profile";
+import Profile from "@/components/profile/Profile";
 
 export default function Home() {
   return (

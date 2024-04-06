@@ -1,7 +1,8 @@
-import React from "react";
-
+"use client";
+import React, { useRef } from "react";
+import style from "./HalfCircle.module.css";
 const HalfCircle = () => {
-  return <div className="absolute bottom-0 w-224 h-112 rounded-b-none rounded-t-224 bg-green-100"></div>;
+  return <div className={`${style["half_circle"]} absolute bottom-0 w-1/2 rounded-b-none rounded-t-full bg-green-100`}></div>;
 };
 
 export default HalfCircle;
