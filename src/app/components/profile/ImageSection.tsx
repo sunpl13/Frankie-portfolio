@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import HalfCircle from "@/components/profile/HalfCircle";
+import HalfCircle from "@/components/Profile/HalfCircle";
 type Props = {};
 
 const ImageSection = (props: Props) => {
