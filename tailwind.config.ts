@@ -25,7 +25,11 @@ const config: Config = {
         'gray-50': 'rgba(240, 240, 240, 0.5)',
         'gray-90': 'rgba(240, 240, 240, 0.9)',
         'black-80': '#363636',
-        'base-dark': '#191919'
+        'base-dark': '#191919',
+        'green-60': 'rgba(155, 254, 3, 0.6)'
+      },
+      screens: {
+        '3xl': '1920px'
       },
       fontSize: {
         '6.5xl': '6.5625rem'

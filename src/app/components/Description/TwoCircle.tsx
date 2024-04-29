@@ -7,7 +7,7 @@ const TwoCircle = () => {
           className="text-gray-90 font-calibre font-semibold text-4xl">
           Front-end
         </strong>
-        <span>프론트엔드</span>
+        <span className="text-2xl">프론트엔드</span>
       </div>
     </div>
   );
