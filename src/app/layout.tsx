@@ -1,15 +1,16 @@
-import type { Metadata } from "next";
-import "./globals.css";
-import { calibre, pretendard } from "@/styles/fonts";
-import GNB from "@/components/GNB";
+import type { Metadata } from 'next';
+import './globals.css';
+import { calibre, pretendard } from '@/styles/fonts';
+import GNB from '@/components/GNB';
+import BackToTopButton from './components/BackToTopButton/BackToTopButton';
 
 export const metadata: Metadata = {
   title: "Jungsoo's PortFolio",
-  description: "Welcome Frankie's Folio!",
+  description: "Welcome Frankie's Folio!"
 };
 
 export default function RootLayout({
-  children,
+  children
 }: Readonly<{
   children: React.ReactNode;
 }>) {
@@ -18,6 +19,7 @@ export default function RootLayout({
       <body className={`${calibre.variable} ${pretendard.variable}`}>
         <GNB />
         {children}
+        <BackToTopButton />
       </body>
     </html>
   );
