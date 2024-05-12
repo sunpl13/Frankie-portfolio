@@ -1,11 +1,14 @@
 import React from 'react';
 import TechStackToken from './TechStackToken';
 import ReactIcon from '@/assets/icons/react-icon.svg';
-type Props = {};
+import style from './Skills.module.css';
 
-const Skills = (props: Props) => {
+const Skills = () => {
   return (
-    <section className="pt-10 pl-10 bg-[#f2f2f2]">
+    <section className="pt-28 pl-44 bg-[#f2f2f2]">
+      <h1 className={`text-9xl font-bold font-calibre ${style['title']}`}>
+        Skills.
+      </h1>
       <TechStackToken
         icon={
           <ReactIcon
