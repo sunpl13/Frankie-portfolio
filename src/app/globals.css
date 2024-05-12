@@ -9,6 +9,10 @@
   --green-100: #9bfe03;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body,
 html {
   height: 100%;
