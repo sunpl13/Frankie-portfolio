@@ -1,7 +1,8 @@
 import React from 'react';
-import TechStackToken from './TechStackToken';
-import ReactIcon from '@/assets/icons/react-icon.svg';
+
 import style from './Skills.module.css';
+import TechStackTypeList from './TechStackTypeList/TechStackTypeList';
+import { languageStack, frontendStack } from '@/utils/datas/techStackData';
 
 const Skills = () => {
   return (
@@ -9,16 +10,12 @@ const Skills = () => {
       <h1 className={`text-9xl font-bold font-calibre ${style['title']}`}>
         Skills.
       </h1>
-      <TechStackToken
-        icon={
-          <ReactIcon
-            className="w-[60%] h-[60%]"
-            aria-hidden="true"
-            focusable="false"
-          />
-        }
-        techName="React"
-      />
+      <div className="w-full">
+        <div className="ml-[50%] gap-12 flex flex-col">
+          <TechStackTypeList stacks={languageStack} typeName="Language" />
+          <TechStackTypeList stacks={frontendStack} typeName="Frontend" />
+        </div>
+      </div>
     </section>
   );
 };
