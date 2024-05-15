@@ -8,6 +8,11 @@ import ReduxIcon from '@/assets/icons/redux-white.svg';
 import ReactQueryIcon from '@/assets/icons/react-query.svg';
 import TailwindIcon from '@/assets/icons/tailwind-icon.svg';
 import MswIcon from '@/assets/icons/msw-icon.svg';
+import JQueryIcon from '@/assets/icons/jquery-white.svg';
+import JestIcon from '@/assets/icons/jest-icon.svg';
+import GitIcon from '@/assets/icons/git-icon.svg';
+import GithubActionIcon from '@/assets/icons/github-action-icon.svg';
+import Ec2Icon from '@/assets/icons/ec2-icon.svg';
 type Stack = { stacksName: string; icon: React.ReactElement };
 const languageStack: Stack[] = [
   {
@@ -122,7 +127,66 @@ const frontendStack: Stack[] = [
         focusable="false"
       />
     )
+  },
+  {
+    stacksName: 'Jest',
+    icon: (
+      <JestIcon
+        width="3rem"
+        height="3rem"
+        aria-hidden="true"
+        focusable="false"
+      />
+    )
+  },
+  {
+    stacksName: 'jQuery',
+    icon: (
+      <JQueryIcon
+        width="3rem"
+        height="3rem"
+        aria-hidden="true"
+        focusable="false"
+      />
+    )
   }
 ];
 
-export { languageStack, frontendStack };
+const devOpsStack: Stack[] = [
+  {
+    stacksName: 'Git',
+    icon: (
+      <GitIcon
+        width="3rem"
+        height="3rem"
+        aria-hidden="true"
+        focusable="false"
+      />
+    )
+  },
+  {
+    stacksName: 'Github Action',
+    icon: (
+      <GithubActionIcon
+        width="3rem"
+        height="3rem"
+        aria-hidden="true"
+        focusable="false"
+      />
+    )
+  },
+  {
+    stacksName: 'EC2',
+    icon: (
+      <Ec2Icon
+        width="3rem"
+        height="3rem"
+        aria-hidden="true"
+        focusable="false"
+        className="text-[#333]"
+      />
+    )
+  }
+];
+
+export { languageStack, frontendStack, devOpsStack };
