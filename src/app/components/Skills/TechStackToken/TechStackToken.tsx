@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './Skills.module.css';
+import style from './TechStackToken.module.css';
 type Props = {
   icon: React.ReactElement;
   techName: string;

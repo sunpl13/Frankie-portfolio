@@ -1,7 +1,7 @@
 import React from 'react';
 
 import style from './Skills.module.css';
-import TechStackTypeList from './TechStackTypeList/TechStackTypeList';
+import TechStackTypeList from './TechStackTypeList';
 import {
   languageStack,
   frontendStack,
@@ -14,8 +14,8 @@ const Skills = () => {
       <h1 className={`text-9xl font-bold font-calibre ${style['title']}`}>
         Skills.
       </h1>
-      <div className="w-full mt-7">
-        <div className="ml-[50%] gap-12 flex flex-col">
+      <div className="w-full mt-7 grid grid-cols-2">
+        <div className="col-start-2 gap-12 flex flex-col">
           <TechStackTypeList stacks={languageStack} typeName="Language" />
           <TechStackTypeList stacks={frontendStack} typeName="Frontend" />
           <TechStackTypeList stacks={devOpsStack} typeName="DevOps" />
