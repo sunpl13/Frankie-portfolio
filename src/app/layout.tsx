@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import { calibre, pretendard } from '@/styles/fonts';
+import { calibre, pretendard, appleGothic } from '@/styles/fonts';
 import GNB from '@/components/GNB';
 import BackToTopButton from './components/BackToTopButton/BackToTopButton';
 
@@ -16,7 +16,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body className={`${calibre.variable} ${pretendard.variable}`}>
+      <body
+        className={`${calibre.variable} ${pretendard.variable} ${appleGothic.variable}`}>
         <GNB />
         {children}
         <BackToTopButton />

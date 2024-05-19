@@ -11,9 +11,7 @@ import {
 const Skills = () => {
   return (
     <section className="pt-28 pl-44 bg-[#f2f2f2] flex">
-      <h1 className={`text-9xl font-bold font-calibre ${style['title']}`}>
-        Skills.
-      </h1>
+      <h1 className={`text-9xl font-bold ${style['title']}`}>Skills.</h1>
       <div className="w-full mt-7 grid grid-cols-2">
         <div className="col-start-2 gap-12 flex flex-col">
           <TechStackTypeList stacks={languageStack} typeName="Language" />

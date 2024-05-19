@@ -9,7 +9,7 @@ type Props = {
 const TechStackTypeList = ({ typeName, stacks }: Props) => {
   return (
     <article>
-      <h2 className="inline-flex items-center text-3xl font-calibre text-[#1e1c1d] border-2 border-base-dark text-center mb-12 pt-3 pb-2 px-12 rounded-3xl">
+      <h2 className="inline-flex items-center text-3xl text-[#1e1c1d] border-2 border-base-dark text-center mb-12 pt-3 pb-2 px-12 rounded-3xl">
         {typeName}
       </h2>
       <div className="grid grid-cols-4 gap-x-10 gap-y-5 max-w-[30.5rem] mb-12">

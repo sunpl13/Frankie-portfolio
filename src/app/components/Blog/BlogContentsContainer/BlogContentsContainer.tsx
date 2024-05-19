@@ -23,7 +23,7 @@ const BlogContentsContainer = () => {
   return (
     <div className="absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%]">
       <div className="relative">
-        <h1 className="z-20 font-calibre font-semibold text-9xl absolute top-[-5.375rem] left-[-4.5rem]">
+        <h1 className="z-20 font-semibold text-9xl absolute top-[-5.375rem] left-[-4.5rem]">
           Blog.
         </h1>
         <div className="w-60 h-60 rounded-full border-2 border-[rgba(30,28,29,0.3)] top-[-8rem] left-20 absolute"></div>
@@ -51,6 +51,9 @@ const BlogContentsContainer = () => {
             </li>
           ))}
         </ul>
+        <div className="absolute right-0">
+          <span className="font-appleGothic">View</span>
+        </div>
       </div>
     </div>
   );

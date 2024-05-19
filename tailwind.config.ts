@@ -15,7 +15,8 @@ const config: Config = {
       },
       fontFamily: {
         pretendard: 'var(--font-pretendard)',
-        calibre: 'var(--font-calibre)'
+        calibre: 'var(--font-calibre)',
+        appleGothic: 'var(--font-apple-gothic-neo)'
       },
       colors: {
         'green-100': '#98f211',

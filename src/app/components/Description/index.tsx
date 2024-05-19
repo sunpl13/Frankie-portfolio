@@ -10,7 +10,7 @@ const Description = (props: Props) => {
         <div className="flex items-end flex-col">
           <div className="mb-24">
             <h2 className="text-4xl text-gray-50">성과를 그리는</h2>
-            <h1 className="font-calibre font-semibold text-5xl tracking-wide text-gray-90 pt-6">
+            <h1 className="font-semibold text-5xl tracking-wide text-gray-90 pt-6">
               Front-End Engineer
             </h1>
           </div>
