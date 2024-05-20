@@ -1,5 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
+import RightArrowIcon from '@/assets/icons/arrow-right.svg';
+import Link from 'next/link';
+
 const BlogContentsContainer = () => {
   const blogData = [
     {
@@ -30,7 +33,7 @@ const BlogContentsContainer = () => {
         <ul className="flex justify center gap-8">
           {blogData.map(({ link, imgSrc, title }) => (
             <li className="w-96 h-60 z-10" key={link}>
-              <a
+              <Link
                 className="block w-full h-full rounded-lg overflow-hidden"
                 href={link}
                 target="_blank">
@@ -47,12 +50,19 @@ const BlogContentsContainer = () => {
                   src={imgSrc}
                   alt={title}
                 />
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
-        <div className="absolute right-0">
-          <span className="font-appleGothic">View</span>
+        <div className="relative flex flex-row-reverse mt-7">
+          <Link
+            href={process.env.NEXT_PUBLIC_TISTORY_URL as string}
+            target="_blank"
+            className="font-appleGothic text-2xl cursor-pointer flex gap-x-4 decoration-[#1e1c1d] underline decoration-solid items-center">
+            View{' '}
+            <RightArrowIcon width="1rem" aria-hidden="true" focusable="false" />
+          </Link>
+          <div className="w-11 h-11 rounded-full border-2 border-[rgba(30,28,29,0.3)] top-3 right-14 absolute"></div>
         </div>
       </div>
     </div>
