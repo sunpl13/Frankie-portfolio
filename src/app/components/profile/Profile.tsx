@@ -3,7 +3,7 @@ import Style from './profile.module.css';
 import ImageSection from './ImageSection';
 const Profile = () => {
   return (
-    <section className="pt-28 relative">
+    <section className="pt-28 relative container">
       <div className="flex flex-col items-center">
         <span className="text-2xl font-medium">
           Welcome to my portfolio site!

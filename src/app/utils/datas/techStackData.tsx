@@ -13,6 +13,7 @@ import JestIcon from '@/assets/icons/jest-icon.svg';
 import GitIcon from '@/assets/icons/git-icon.svg';
 import GithubActionIcon from '@/assets/icons/github-action-icon.svg';
 import Ec2Icon from '@/assets/icons/ec2-icon.svg';
+import JenkinsIcon from '@/assets/icons/jenkins-icon.svg';
 type Stack = { stacksName: string; icon: React.ReactElement };
 const languageStack: Stack[] = [
   {
@@ -179,6 +180,18 @@ const devOpsStack: Stack[] = [
     stacksName: 'EC2',
     icon: (
       <Ec2Icon
+        width="3rem"
+        height="3rem"
+        aria-hidden="true"
+        focusable="false"
+        className="text-[#333]"
+      />
+    )
+  },
+  {
+    stacksName: 'Jenkins',
+    icon: (
+      <JenkinsIcon
         width="3rem"
         height="3rem"
         aria-hidden="true"

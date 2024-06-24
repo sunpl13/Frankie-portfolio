@@ -1,14 +1,12 @@
 import React from 'react';
-import GnbStyle from './/gnb.module.css';
+import NavItems from './NavItems';
+
 const GNB = () => {
   return (
-    <header className="flex w-full h-24 bg-black items-center">
-      <nav className="w-full">
-        <ul className={`list-none flex text-white text-2xl ml-48`}>
-          <li className={`${GnbStyle['li-style']}`}>Profile</li>
-          <li className={`${GnbStyle['li-style']}`}>Project</li>
-        </ul>
-      </nav>
+    <header className="w-full max-[640px]:px-4 sm:h-24 sm:bg-black">
+      <ul className="h-full w-full list-none flex max-[640px]:justify-between items-center text-white text-2xl">
+        <NavItems />
+      </ul>
     </header>
   );
 };
