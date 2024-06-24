@@ -1,19 +1,30 @@
 import React from 'react';
 import Image from 'next/image';
 import HalfCircle from '../HalfCircle';
-type Props = {};
+import { cn } from '@/utils/cn';
 
-const ImageSection = (props: Props) => {
+const ImageSection = () => {
   return (
     <div className="absolute bottom-0 flex-1 right-2/4 flex justify-center w-full translate-x-[50%]">
       <Image
-        className="z-10 !relative !w-1/4"
+        className={cn(
+          'z-10',
+          '!relative',
+          'max-[640px]:!w-4/5',
+          'max-[768px]:!w-2/3',
+          'max-[1080px]:!w-1/2',
+          'max-[1280px]:!w-2/5',
+          'max-[1440px]:!w-2/6',
+          'max-[1560px]:!w-[27.5%]',
+          '!w-1/5'
+        )}
         src="/profile_half.png"
         alt="profile_img"
         objectFit="cover"
         loading="lazy"
         fill={true}
-        quality={100}></Image>
+        quality={100}
+      />
       <HalfCircle />
     </div>
   );

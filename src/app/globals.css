@@ -42,3 +42,9 @@ section:not(:first-of-type) {
     text-wrap: balance;
   }
 }
+
+@media (max-width: 639px) {
+  main {
+    height: calc(100% - 4rem);
+  }
+}

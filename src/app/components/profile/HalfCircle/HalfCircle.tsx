@@ -1,10 +1,23 @@
 'use client';
-import React, { useRef } from 'react';
+import React from 'react';
 import style from './HalfCircle.module.css';
+import { cn } from '@/utils/cn';
+
 const HalfCircle = () => {
   return (
     <div
-      className={`${style['half_circle']} absolute bottom-0 w-1/2 rounded-b-none rounded-t-full bg-green-100`}></div>
+      className={cn(
+        'absolute',
+        'bottom-0',
+        'w-1/2',
+        'pt-[25%]',
+        'max-[1080px]:w-full',
+        'max-[1080px]:pt-[50%]',
+        'rounded-b-none',
+        'rounded-t-full',
+        'bg-green-100',
+        style['half_circle']
+      )}></div>
   );
 };
 

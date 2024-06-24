@@ -1,20 +1,46 @@
 import React from 'react';
 import Style from './profile.module.css';
 import ImageSection from './ImageSection';
+import { cn } from '@/utils/cn';
+
 const Profile = () => {
   return (
-    <section className="pt-28 relative container">
+    <section className={cn('pt-28', 'relative')}>
       <div className="flex flex-col items-center">
-        <span className="text-2xl font-medium">
+        <span
+          className={cn(
+            'sm:text-lg',
+            'md:text-xl',
+            'lg:text-2xl',
+            'font-medium'
+          )}>
           Welcome to my portfolio site!
         </span>
         <h1
-          className={`${Style.name} text-white text-6.5xl font-bold mt-12 mb-6`}>
+          className={cn(
+            Style.name,
+            'text-white',
+            'sm:text-5xl',
+            'lg:text-6xl',
+            '2xl:text-6.5xl',
+            'max-[640px]:text-5xl',
+            'font-bold',
+            'mt-12',
+            'mb-6'
+          )}>
           KIM JUNG SOO
         </h1>
         <h2
           data-testid="intro"
-          className={`${Style.developer} font-black-80 font-semibold text-7xl`}>
+          className={cn(
+            Style.developer,
+            'font-black-80',
+            'font-semibold',
+            'max-[640px]:text-4xl',
+            'sm:text-5xl',
+            'lg:text-6xl',
+            '2xl:text-7xl'
+          )}>
           I’m Frontend developer
         </h2>
       </div>

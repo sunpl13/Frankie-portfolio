@@ -19,8 +19,8 @@ export default function RootLayout({
       <body
         className={`${calibre.variable} ${pretendard.variable} ${appleGothic.variable}`}>
         <GNB />
-        {/* {children}
-        <BackToTopButton /> */}
+        {children}
+        <BackToTopButton />
       </body>
     </html>
   );
