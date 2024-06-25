@@ -1,24 +1,23 @@
 'use client';
-import useWindowDimensions from '@/hooks/useWindowDimensions';
 import UserIcon from '@/assets/icons/user-icon.svg';
 import LayerIcon from '@/assets/icons/layer-icon.svg';
 import Link from 'next/link';
+import { cn } from '@/utils/cn';
+import useMediaQuery from '@/hooks/useMediaQuery';
+
 const NavItems = () => {
-  const { width } = useWindowDimensions();
-  const isMobile = (width: number) => {
-    if (width < 640) return true;
-    return false;
-  };
+  const isMobile = useMediaQuery('(max-width: 640px)');
+
   return (
     <>
       <li
-        className={`${
-          isMobile(width)
+        className={cn(
+          isMobile
             ? 'rounded-full flex justify-center items-center w-10 h-10 bg-[#1b1b1b]'
-            : ''
-        } sm:px-24`}>
+            : 'sm:px-24'
+        )}>
         <Link href="/">
-          {isMobile(width) ? (
+          {isMobile ? (
             <UserIcon
               width="1.5rem"
               height="2.5rem"
@@ -32,13 +31,13 @@ const NavItems = () => {
         </Link>
       </li>
       <li
-        className={`${
-          isMobile(width)
+        className={cn(
+          isMobile
             ? 'rounded-full flex justify-center items-center w-10 h-10 bg-[#1b1b1b]'
-            : ''
-        } sm:px-24`}>
+            : 'sm:px-24'
+        )}>
         <Link href="/projects">
-          {isMobile(width) ? (
+          {isMobile ? (
             <LayerIcon
               width="1.5rem"
               height="2.5rem"

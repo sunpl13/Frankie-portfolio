@@ -16,6 +16,7 @@ const ImageSection = () => {
           'max-[1280px]:!w-2/5',
           'max-[1440px]:!w-2/6',
           'max-[1560px]:!w-[27.5%]',
+          'max-[1892px]:!w-3/10',
           '!w-1/5'
         )}
         src="/profile_half.png"

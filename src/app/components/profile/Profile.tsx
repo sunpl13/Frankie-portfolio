@@ -41,7 +41,7 @@ const Profile = () => {
             'lg:text-6xl',
             '2xl:text-7xl'
           )}>
-          I’m Frontend developer
+          I’m Frontend Developer
         </h2>
       </div>
       <ImageSection />
