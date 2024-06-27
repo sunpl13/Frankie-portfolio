@@ -1,49 +1,82 @@
-import React from 'react';
-import TwoCircle from './TwoCircle';
+'use client';
+import React, { useEffect, useState } from 'react';
+import { descriptionData } from '../../../../constants/projects';
+import DescriptionContainer from './DescriptionContainer';
 
-type Props = {};
+const Description = () => {
+  const [currentInputs, setCurrentInputs] = useState({
+    currentWindowHeight: window.innerHeight,
+    currentPage: 0
+  });
 
-const Description = (props: Props) => {
+  //윈도우 리사이즈 시, 윈도우 사이즈를 조정한다
+  const setPageSize = () => {
+    setCurrentInputs((prev) => ({
+      ...prev,
+      currentWindowHeight: window.innerHeight
+    }));
+  };
+
+  //현재 페이지가 몇페이지인지 구하는 함수
+  const setPage = () => {
+    for (var i = 1; i < 3; i++) {
+      if (window.scrollY < currentInputs.currentWindowHeight * i) {
+        setCurrentInputs({ ...currentInputs, currentPage: i });
+        return;
+      }
+    }
+  };
+
+  // Scroll Event와 Resize시 무한 반복을 피하기 위함
+  useEffect(() => {
+    window.addEventListener('scroll', setPage);
+    window.addEventListener('resize', setPageSize);
+    return () => {
+      window.removeEventListener('scroll', setPage);
+      window.removeEventListener('resize', setPageSize);
+    };
+  });
+
+  window.addEventListener('wheel', (e) => {
+    e.preventDefault();
+    // 마우스 휠을 내릴때
+    if (e.deltaY > 0) {
+      let p = 1;
+      while (p < 3) {
+        if (currentInputs.currentPage === p) {
+          window.scrollTo({
+            top: currentInputs.currentWindowHeight * p,
+            behavior: 'smooth'
+          });
+        }
+        p++;
+      }
+    }
+    // 마우스 휠을 올릴때
+    if (e.deltaY < 0) {
+      let p = 1;
+      while (p < 3) {
+        if (currentInputs.currentPage === p) {
+          window.scrollTo({
+            top: currentInputs.currentWindowHeight * (p - 1),
+            behavior: 'smooth'
+          });
+        }
+        p++;
+      }
+    }
+  });
   return (
-    <section className="bg-base-dark text-white font-pretendard">
-      <article className="flex justify-between px-60 py-36">
-        <div className="flex items-end flex-col">
-          <div className="mb-24">
-            <h2 className="text-4xl text-gray-50">성과를 그리는</h2>
-            <h1 className="font-semibold text-5xl tracking-wide text-gray-90 pt-6">
-              Front-End Engineer
-            </h1>
-          </div>
-          <TwoCircle />
-        </div>
-
-        <div className="text-gray-60 text-3xl ">
-          <p className="text-2xl text-gray-30 mb-40 pt-3">
-            <br />
-            사용자와 비즈니스 사이 [소통의 매개체] 로서
-            <br /> 최상의 서비스를 제공하는 개발자를 꿈꾸고 있습니다.
-          </p>
-
-          <div>
-            <p>
-              단어 뜻 그대로 <br />
-              <strong className="text-green-60">
-                사용자와 가장 직접적으로 마주하는
-              </strong>
-              <br />
-              서비스를 개발합니다.
-            </p>
-
-            <p className="pt-14">
-              항상 사용자에게 <br /> 더 나은 서비스를 제공하기 위한
-              <br />
-              <strong className="text-green-60">UI/UX</strong>에 관심이
-              많습니다.
-            </p>
-          </div>
-        </div>
-      </article>
-    </section>
+    <>
+      {descriptionData.map(({ title, subDescription, content }) => (
+        <DescriptionContainer
+          title={title}
+          subDescription={subDescription}
+          content={content}
+          key={title.ko}
+        />
+      ))}
+    </>
   );
 };
 
