@@ -12,7 +12,7 @@ import { useState } from 'react';
 const SwiperContainer = () => {
   const [title, setTitle] = useState('');
   return (
-    <section
+    <div
       className={cn(
         'flex',
         'items-center',
@@ -134,7 +134,7 @@ const SwiperContainer = () => {
         {title}
         <RightArrowIcon width="1rem" aria-hidden="true" focusable="false" />
       </span>
-    </section>
+    </div>
   );
 };
 

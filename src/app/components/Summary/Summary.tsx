@@ -6,7 +6,7 @@ const Summary = () => {
     <section className="bg-base-dark flex flex-col justify-center items-center">
       <div className="xl:container">
         <div className="flex justify-around">
-          <h1 className="text-white text-6xl font-calibre font-semibold mb-36">
+          <h1 className="text-white text-6xl font-semibold mb-36">
             WELCOME TO MY <br />
             PORTFOLIO SITE!
           </h1>
