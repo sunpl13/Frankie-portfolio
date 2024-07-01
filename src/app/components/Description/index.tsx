@@ -13,7 +13,7 @@ const Description = () => {
   const setPageSize = () => {
     setCurrentInputs((prev) => ({
       ...prev,
-      currentWindowHeight: window.innerHeight
+      currentWindowHeight: window.innerHeight ?? 0
     }));
   };
 
