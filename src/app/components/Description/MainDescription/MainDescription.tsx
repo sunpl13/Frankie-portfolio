@@ -10,7 +10,7 @@ const MainDescription = ({ children }: Props) => {
     <div
       className={cn(
         '2xl:w-[35rem]',
-        'xl:[29.375rem]',
+        'xl:w-[29.375rem]',
         'lg:w-[29.375rem]',
         'md:w-[26.25rem]'
       )}>

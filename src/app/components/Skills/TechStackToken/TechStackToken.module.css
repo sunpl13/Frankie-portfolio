@@ -1,3 +1,30 @@
 .token {
   box-shadow: 0 0 0 6px #afafafd2, inset 0 2px #00000014, 0 3px 0 4px #0000000d;
 }
+
+@media (min-width: 768px) {
+  .token {
+    box-shadow: 0 0 0 3px #afafafd2, inset 0 1px #00000014,
+      0 1px 0 1.5px #0000000d;
+  }
+}
+
+@media (min-width: 1024px) {
+  .token {
+    box-shadow: 0 0 0 4px #afafafd2, inset 0 1px #00000014,
+      0 1.5px 0 2px #0000000d;
+  }
+}
+
+@media (min-width: 1280px) {
+  .token {
+    box-shadow: 0 0 0 5px #afafafd2, inset 0 1.5px #00000014,
+      0 2px 0 3px #0000000d;
+  }
+}
+@media (max-width: 767px) {
+  .token {
+    box-shadow: 0 0 0 2px #afafafd2, inset 0 1px #00000014,
+      0 1px 0 1.5px #0000000d;
+  }
+}

@@ -1,5 +1,8 @@
 import React from 'react';
 import TechStackToken from '../TechStackToken';
+import BubbleText from '../BubbleText';
+import MotionSlide from '@/components/MotionSlide';
+import { cn } from '@/utils/cn';
 
 type Props = {
   typeName: 'Language' | 'Frontend' | 'Backend' | 'DevOps';
@@ -8,16 +11,35 @@ type Props = {
 
 const TechStackTypeList = ({ typeName, stacks }: Props) => {
   return (
-    <article>
-      <h2 className="inline-flex items-center text-3xl text-[#1e1c1d] border-2 border-base-dark text-center mb-12 pt-3 pb-2 px-12 rounded-3xl">
-        {typeName}
-      </h2>
-      <div className="grid grid-cols-4 gap-x-10 gap-y-5 max-w-[30.5rem] mb-12">
-        {stacks.map(({ stacksName, icon }) => (
-          <TechStackToken key={stacksName} techName={stacksName} icon={icon} />
+    <article
+      className={cn(
+        'flex',
+        'flex-col',
+        'justify-between',
+        '2xl:h-[23.75rem]',
+        'lg:h-[20rem]',
+        'md:h-[15rem]'
+      )}>
+      <BubbleText text={typeName} />
+      <div
+        className={cn(
+          'grid',
+          'grid-cols-4',
+          'gap-y-5',
+          'max-w-[30.5rem]',
+          '2xl:gap-x-10',
+          'lg:gap-x-5',
+          'md:gap-x-2'
+        )}>
+        {stacks.map(({ stacksName, icon }, index) => (
+          <MotionSlide
+            className="flex justify-center items-center"
+            key={stacksName}
+            delay={(index + 1) / 5}>
+            <TechStackToken techName={stacksName} icon={icon} />
+          </MotionSlide>
         ))}
       </div>
-      <div className="h-px w-full border border-base-dark"></div>
     </article>
   );
 };
