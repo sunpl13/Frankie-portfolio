@@ -39,12 +39,6 @@ const Description = () => {
     if (e.deltaY > 0) {
       let p = 1;
       while (p < 9) {
-        console.log(
-          document.getElementsByTagName('header')[0].clientHeight,
-          document.getElementsByClassName('description')[0].clientHeight,
-          document.getElementsByClassName('description')[1].clientHeight,
-          document.getElementsByClassName('description')[2].clientHeight
-        );
         if (currentInputs.currentPage === p) {
           window.scrollTo({
             top: currentInputs.currentWindowHeight * p,

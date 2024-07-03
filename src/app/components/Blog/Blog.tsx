@@ -4,7 +4,9 @@ import { cn } from '@/utils/cn';
 
 const Blog = () => {
   return (
-    <section className={cn('bg-[#f2f2f2]', 'relative', 'overflow-hidden')}>
+    <section
+      id="blog-section"
+      className={cn('bg-[#f2f2f2]', 'relative', 'overflow-hidden')}>
       <div className={cn('h-1/3', 'relative')}>
         <div
           className={cn(

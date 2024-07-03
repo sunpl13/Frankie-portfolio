@@ -13,6 +13,7 @@ const DescriptionContainer = ({
 }: DescriptionDataType) => {
   return (
     <section
+      id={`description-${title.en}-section`}
       className={cn(
         'bg-base-dark',
         'text-white',

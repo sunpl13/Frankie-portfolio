@@ -5,7 +5,7 @@ import { cn } from '@/utils/cn';
 
 const Profile = () => {
   return (
-    <section className={cn('pt-28', 'relative')}>
+    <section id="profile-section" className={cn('pt-28', 'relative')}>
       <div className="flex flex-col items-center">
         <span
           className={cn(

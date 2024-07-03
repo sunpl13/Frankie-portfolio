@@ -2,10 +2,13 @@ import { cn } from '@/utils/cn';
 import Link from 'next/link';
 import React from 'react';
 import MotionSlide from '../MotionSlide';
+import SummaryNavigate from './SummaryNavigate';
 
 const Summary = () => {
   return (
-    <section className="bg-base-dark flex flex-col justify-center items-center">
+    <section
+      id="summary-section"
+      className="bg-base-dark flex flex-col justify-center items-center">
       <div className="xl:container">
         <div className="flex justify-around">
           <h1
@@ -35,25 +38,7 @@ const Summary = () => {
             'items-center',
             'gap-3'
           )}>
-          <MotionSlide delay={0.2}>
-            <ul className="flex flex-col sm:gap-y-3 items-center">
-              <li>
-                <button className="underline">ABOUT ME</button>
-              </li>
-              <li>
-                <button className="underline">SKILLS</button>
-              </li>
-              <li>
-                <button className="underline">WORK EXPERIENCE</button>
-              </li>
-              <li>
-                <button className="underline">PROJECTS</button>
-              </li>
-              <li>
-                <button className="underline">BLOG</button>
-              </li>
-            </ul>
-          </MotionSlide>
+          <SummaryNavigate />
           <MotionSlide delay={0.7}>
             <ul className="flex flex-col sm:gap-y-3 underline items-center">
               <li>sunpl0718@naver.com</li>

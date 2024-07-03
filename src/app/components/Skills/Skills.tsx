@@ -12,7 +12,9 @@ import { cn } from '@/utils/cn';
 
 const Skills = () => {
   return (
-    <section className="bg-[#f2f2f2] h-full flex flex-col justify-center items-center">
+    <section
+      id="skills-section"
+      className="bg-[#f2f2f2] h-full flex flex-col justify-center items-center">
       <h1
         className={cn(
           '2xl:text-9xl',
