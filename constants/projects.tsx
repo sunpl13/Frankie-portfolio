@@ -3,6 +3,9 @@ import bImage from '@/assets/b.jpg';
 import cImage from '@/assets/c.jpg';
 import dImage from '@/assets/d.jpg';
 import eImage from '@/assets/e.jpg';
+import addTuneIcon from '@/assets/image/addtune.png';
+import polarisLogo from '@/assets/image/polarisoffice.png';
+import classtingLogo from '@/assets/image/classting.png';
 import { cn } from '@/utils/cn';
 import React from 'react';
 
@@ -118,5 +121,35 @@ export const descriptionData: DescriptionDataType[] = [
         </p>
       </>
     )
+  }
+];
+
+export const experiences = [
+  {
+    title: 'Front-End Developer',
+    company_name: '인터브리드',
+    icon: addTuneIcon,
+    iconBg: '#333333',
+    date: 'Nov 2021 - Jul 2022',
+    description:
+      '중소기업, 소상공인도 합리적인 비용으로 <br/> 광고할 수 있는 옥외광고 플랫폼 스타트업'
+  },
+  {
+    title: 'Front-End Developer',
+    company_name: '폴라리스오피스',
+    icon: polarisLogo,
+    iconBg: '#333333',
+    date: 'Nov 2022 - Mar 2024',
+    description:
+      '다양한 플랫폼과 다양한 기기를 통해 <br/> 문서 작업이 가능한 오피스 소프트웨어 전문 기업'
+  },
+  {
+    title: 'Front-End Developer',
+    company_name: '클래스팅',
+    icon: classtingLogo,
+    iconBg: '#333333',
+    date: 'Mar 2024 - Jun 2024',
+    description:
+      '교사와 학생, 학부모를 위한 AI 기반 학습관리 시스템을 제공하는 교육 플랫폼 스타트업'
   }
 ];
