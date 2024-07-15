@@ -9,8 +9,12 @@ import RightArrowIcon from '@/assets/icons/arrow-right.svg';
 import { cn } from '@/utils/cn';
 import { ServiceDatas } from '../../../../constants/projects';
 import { useState } from 'react';
+import Link from 'next/link';
 const SwiperContainer = () => {
-  const [title, setTitle] = useState('');
+  const [titleInfo, setTitleInfo] = useState({
+    title: '',
+    url: ''
+  });
   return (
     <div
       className={cn(
@@ -45,7 +49,11 @@ const SwiperContainer = () => {
         }}
         centeredSlides={true}
         onActiveIndexChange={(e) => {
-          setTitle(ServiceDatas[e.realIndex].title);
+          setTitleInfo({
+            ...titleInfo,
+            title: ServiceDatas[e.realIndex].title,
+            url: ServiceDatas[e.realIndex].url
+          });
         }}
         autoplay={{
           delay: 2000,
@@ -121,7 +129,9 @@ const SwiperContainer = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <span
+      <Link
+        target="_blank"
+        href={titleInfo.url}
         aria-label="project-name"
         className={cn(
           'mt-10',
@@ -131,9 +141,9 @@ const SwiperContainer = () => {
           'gap-x-2',
           'cursor-pointer'
         )}>
-        {title}
+        {titleInfo.title}
         <RightArrowIcon width="1rem" aria-hidden="true" focusable="false" />
-      </span>
+      </Link>
     </div>
   );
 };

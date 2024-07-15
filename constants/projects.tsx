@@ -1,8 +1,7 @@
-import aImage from '@/assets/a.jpg';
-import bImage from '@/assets/b.jpg';
-import cImage from '@/assets/c.jpg';
-import dImage from '@/assets/d.jpg';
-import eImage from '@/assets/e.jpg';
+import askDocImg from '@/assets/image/askdoc-thumb.png';
+import teslaThumbImg from '@/assets/image/tesla-thumb.jpg';
+import legacyThumbImg from '@/assets/image/legacy-thumb.png';
+import webOfficeImg from '@/assets/image/web-office-thumb.png';
 import addTuneIcon from '@/assets/image/addtune.png';
 import polarisLogo from '@/assets/image/polarisoffice.png';
 import classtingLogo from '@/assets/image/classting.png';
@@ -20,29 +19,30 @@ export type DescriptionDataType = {
 
 export const ServiceDatas = [
   {
-    title: 'Developmenet',
-    content: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
-    backGroundImage: aImage
+    title: 'AskDoc',
+    content:
+      '길고 복잡한 문서를 AI에게 분석을 맡겨 필요한 정보만 간략하게 볼 수 있는 폴라리스 드라이브 사용자를 위한 PDF AI 문서 분석 프로그램',
+    url: `${process.env.NEXT_PUBLIC_NOTION_URL}/AskDoc-Frontend-9c34d32e86cc475c8cffe55cd32a3571`,
+    backGroundImage: askDocImg
   },
   {
-    title: 'Branding',
-    content: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
-    backGroundImage: bImage
+    title: '차량용 폴라리스 드라이브',
+    content: '차량 소프트웨어를 위한 경량화 된 폴라리스오피스 드라이브 페이지',
+    url: `${process.env.NEXT_PUBLIC_NOTION_URL}/062d8efaea374bff87bb6b490f79f963?pvs=4`,
+    backGroundImage: teslaThumbImg
   },
   {
-    title: 'Design',
-    content: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
-    backGroundImage: cImage
+    title: '폴라리스오피스 플랫폼 레거시 개선',
+    content:
+      'JSP와 jQuery를 기반으로 한 플랫폼을 Next.js 마이그레이션 프로젝트',
+    url: `${process.env.NEXT_PUBLIC_NOTION_URL}/b608f6f11c8c48fdaaf98e5fdddf3054?pvs=4`,
+    backGroundImage: legacyThumbImg
   },
   {
-    title: 'Seo',
-    content: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
-    backGroundImage: dImage
-  },
-  {
-    title: 'Management',
-    content: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
-    backGroundImage: eImage
+    title: '웹 오피스 편집모드',
+    content: '뷰어만 제공되던 폴라리스오피스 Web의 편집모드를 추가한 프로젝트',
+    url: `${process.env.NEXT_PUBLIC_NOTION_URL}/c11e3bc3c737431aac0958989dd04a83?pvs=4`,
+    backGroundImage: webOfficeImg
   }
 ];
 
