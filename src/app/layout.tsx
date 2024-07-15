@@ -3,6 +3,7 @@ import './globals.css';
 import { calibre, pretendard, appleGothic } from '@/styles/fonts';
 import GNB from '@/components/GNB';
 import BackToTopButton from './components/BackToTopButton/BackToTopButton';
+import Sidebar from './components/Sidebar';
 
 export const metadata: Metadata = {
   title: "Jungsoo's PortFolio",
@@ -19,6 +20,7 @@ export default function RootLayout({
       <body
         className={`${calibre.variable} ${pretendard.variable} ${appleGothic.variable}`}>
         <GNB />
+        <Sidebar />
         {children}
         <BackToTopButton />
       </body>
