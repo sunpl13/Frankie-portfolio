@@ -19,7 +19,6 @@ export default function RootLayout({
     <html lang="ko">
       <body
         className={`${calibre.variable} ${pretendard.variable} ${appleGothic.variable}`}>
-        <GNB />
         <Sidebar />
         {children}
         <BackToTopButton />

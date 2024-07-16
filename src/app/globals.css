@@ -19,10 +19,7 @@ html {
   height: 100%;
 }
 
-section:first-of-type {
-  height: calc(100vh - 6rem);
-}
-section:not(:first-of-type) {
+section {
   height: 100vh;
 }
 
@@ -51,11 +48,5 @@ section:not(:first-of-type) {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
-  }
-}
-
-@media (max-width: 639px) {
-  section:first-of-type {
-    height: calc(100vh - 4rem);
   }
 }
