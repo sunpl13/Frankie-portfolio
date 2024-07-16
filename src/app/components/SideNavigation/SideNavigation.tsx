@@ -3,6 +3,10 @@ import { motion } from 'framer-motion';
 import SidebarMenuItem from '../SidebarMenuItem';
 import { cn } from '@/utils/cn';
 
+type SideNavigationProps = {
+  setToggle: () => void;
+};
+
 const variants = {
   open: {
     transition: { staggerChildren: 0.07, delayChildren: 0.2 }
@@ -12,8 +16,9 @@ const variants = {
   }
 };
 
-const SideNavigation = () => {
+const SideNavigation = ({ setToggle }: SideNavigationProps) => {
   const navSection = [
+    { sectionId: 'profile-section', sectionName: 'TOP' },
     { sectionId: 'description-Front-end-section', sectionName: 'ABOUT ME' },
     { sectionId: 'skills-section', sectionName: 'SKILLS' },
     { sectionId: 'experience-section', sectionName: 'WORK EXPERIENCE' },
@@ -29,6 +34,7 @@ const SideNavigation = () => {
           sectionId={sectionId}
           sectionName={sectionName}
           key={sectionId}
+          setToggle={setToggle}
         />
       ))}
     </motion.ul>

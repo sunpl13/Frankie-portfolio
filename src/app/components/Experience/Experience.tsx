@@ -11,7 +11,7 @@ const Experience = () => {
   return (
     <section id="experience-section" className="bg-base-dark">
       <motion.div
-        className="flex px-10 max-[640px]:justify-center"
+        className="flex px-20 max-[640px]:justify-center"
         variants={{
           hidden: {
             y: -50,

@@ -52,11 +52,11 @@ const Sidebar = () => {
           'left-0',
           'bottom-0',
           'w-[300px]',
-          'bg-red-300'
+          'bg-green-100'
         )}
         variants={sidebarVariants}
       />
-      <SideNavigation />
+      <SideNavigation setToggle={() => toggleOpen()} />
       <SideMenuToggle setToggle={() => toggleOpen()} />
     </motion.nav>
   );

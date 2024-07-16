@@ -5,7 +5,7 @@ const Projects = () => {
   return (
     <section
       id="project-section"
-      className="h-full flex flex-col justify-center items-center relative overflow-y-hidden">
+      className="flex flex-col justify-center items-center relative overflow-y-hidden">
       <SwiperContainer />
       <ArrowHandIcon
         className="text-gray-90 absolute bottom-[-2rem] left-1/2 translate-x-[-50%]"

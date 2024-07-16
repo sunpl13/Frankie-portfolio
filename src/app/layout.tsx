@@ -21,7 +21,6 @@ export default function RootLayout({
         className={`${calibre.variable} ${pretendard.variable} ${appleGothic.variable}`}>
         <Sidebar />
         {children}
-        <BackToTopButton />
       </body>
     </html>
   );

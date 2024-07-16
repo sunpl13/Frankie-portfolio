@@ -14,7 +14,13 @@ const Skills = () => {
   return (
     <section
       id="skills-section"
-      className="bg-[#f2f2f2] h-full flex flex-col justify-center items-center">
+      className={cn(
+        'bg-[#f2f2f2]',
+        'flex',
+        'flex-col',
+        'justify-center',
+        'items-center'
+      )}>
       <h1
         className={cn(
           '2xl:text-9xl',
@@ -32,7 +38,7 @@ const Skills = () => {
           className={cn(
             'col-start-2',
             'flex',
-            'max-[639px]:flex-col',
+            'max-[820px]:flex-col',
             'gap-x-6',
             'lg:gap-x-8',
             'xl:gap-x-10',

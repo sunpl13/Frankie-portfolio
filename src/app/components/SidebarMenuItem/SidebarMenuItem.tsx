@@ -1,9 +1,10 @@
 import { cn } from '@/utils/cn';
 import { motion } from 'framer-motion';
-
+import style from './SidebarMenuItem.module.css';
 type Props = {
   sectionName: string;
   sectionId: string;
+  setToggle: () => void;
 };
 
 const variants = {
@@ -23,9 +24,10 @@ const variants = {
   }
 };
 
-const SidebarMenuItem = ({ sectionName, sectionId }: Props) => {
+const SidebarMenuItem = ({ sectionName, sectionId, setToggle }: Props) => {
   const scrollNavigate = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    setToggle();
   };
   return (
     <motion.li
@@ -34,7 +36,10 @@ const SidebarMenuItem = ({ sectionName, sectionId }: Props) => {
         'flex',
         'items-center',
         'cursor-pointer',
-        'mb-5'
+        'mb-5',
+        style['menu-item'],
+        'text-green-100',
+        'text-5xl'
       )}
       variants={variants}
       whileHover={{ scale: 1.1 }}
