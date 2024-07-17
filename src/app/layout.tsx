@@ -1,9 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { calibre, pretendard, appleGothic } from '@/styles/fonts';
-import GNB from '@/components/GNB';
-import BackToTopButton from './components/BackToTopButton/BackToTopButton';
-import Sidebar from './components/Sidebar';
+import Sidebar from '@/components/Sidebar';
 
 export const metadata: Metadata = {
   title: "Jungsoo's PortFolio",

@@ -7,7 +7,7 @@ import 'swiper/css/free-mode';
 import Image from 'next/image';
 import RightArrowIcon from '@/assets/icons/arrow-right.svg';
 import { cn } from '@/utils/cn';
-import { ServiceDatas } from '../../../../constants/projects';
+import { ServiceDatas } from '@/constants/projects';
 import { useState } from 'react';
 import Link from 'next/link';
 const SwiperContainer = () => {

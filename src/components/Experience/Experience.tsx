@@ -2,10 +2,10 @@
 import { VerticalTimeline } from 'react-vertical-timeline-component';
 import { motion } from 'framer-motion';
 import 'react-vertical-timeline-component/style.min.css';
-import { experiences } from '../../../../constants/projects';
+import { experiences } from '@/constants/projects';
 import ExperienceCard from '../ExperienceCard';
 import { cn } from '@/utils/cn';
-import AnimatedCounter from '../AnimatedCounter/AnimatedCounter';
+import AnimatedCounter from '@/components/AnimatedCounter';
 
 const Experience = () => {
   return (
