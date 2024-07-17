@@ -1,6 +1,6 @@
 'use client';
-import UserIcon from '@/assets/icons/user-icon.svg';
-import LayerIcon from '@/assets/icons/layer-icon.svg';
+import UserIcon from '@icons/user-icon.svg';
+import LayerIcon from '@icons/layer-icon.svg';
 import Link from 'next/link';
 import { cn } from '@/utils/cn';
 import useMediaQuery from '@/hooks/useMediaQuery';

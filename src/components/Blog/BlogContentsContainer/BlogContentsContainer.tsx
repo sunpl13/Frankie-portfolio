@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import RightArrowIcon from '@/assets/icons/arrow-right.svg';
+import RightArrowIcon from '@icons/arrow-right.svg';
 import Link from 'next/link';
 import { cn } from '@/utils/cn';
 import MotionSlide from '@/components/MotionSlide';

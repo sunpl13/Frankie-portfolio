@@ -1,10 +1,10 @@
-import askDocImg from '@/assets/image/askdoc-thumb.png';
-import teslaThumbImg from '@/assets/image/tesla-thumb.jpg';
-import legacyThumbImg from '@/assets/image/legacy-thumb.png';
-import webOfficeImg from '@/assets/image/web-office-thumb.png';
-import addTuneIcon from '@/assets/image/addtune.png';
-import polarisLogo from '@/assets/image/polarisoffice.png';
-import classtingLogo from '@/assets/image/classting.png';
+import askDocImg from '@images/askdoc-thumb.png';
+import teslaThumbImg from '@images/tesla-thumb.jpg';
+import legacyThumbImg from '@images/legacy-thumb.png';
+import webOfficeImg from '@images/web-office-thumb.png';
+import addTuneIcon from '@images/addtune.png';
+import polarisLogo from '@images/polarisoffice.png';
+import classtingLogo from '@images/classting.png';
 import { cn } from '@/utils/cn';
 import React from 'react';
 

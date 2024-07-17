@@ -1,6 +1,6 @@
 'use client';
 import { useEffect, useState } from 'react';
-import ArrowUpIcon from '@/assets/icons/arrow-up.svg';
+import ArrowUpIcon from '@icons/arrow-up.svg';
 
 const BackToTopButton = () => {
   const [showButton, setShowButton] = useState(false);

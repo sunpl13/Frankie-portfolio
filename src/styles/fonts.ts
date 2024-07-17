@@ -3,31 +3,31 @@ import localFont from 'next/font/local';
 const calibre = localFont({
   src: [
     {
-      path: '../assets/font/calibre/CalibreThin.otf',
+      path: '../../public/fonts/calibre/CalibreThin.otf',
       weight: '100'
     },
     {
-      path: '../assets/font/calibre/CalibreLight.otf',
+      path: '../../public/fonts/calibre/CalibreLight.otf',
       weight: '300'
     },
     {
-      path: '../assets/font/calibre/CalibreRegular.otf',
+      path: '../../public/fonts/calibre/CalibreRegular.otf',
       weight: '400'
     },
     {
-      path: '../assets/font/calibre/CalibreMedium.otf',
+      path: '../../public/fonts/calibre/CalibreMedium.otf',
       weight: '500'
     },
     {
-      path: '../assets/font/calibre/CalibreSemibold.otf',
+      path: '../../public/fonts/calibre/CalibreSemibold.otf',
       weight: '600'
     },
     {
-      path: '../assets/font/calibre/CalibreBold.otf',
+      path: '../../public/fonts/calibre/CalibreBold.otf',
       weight: '700'
     },
     {
-      path: '../assets/font/calibre/CalibreBlack.otf',
+      path: '../../public/fonts/calibre/CalibreBlack.otf',
       weight: '900'
     }
   ],
@@ -38,39 +38,39 @@ const calibre = localFont({
 const pretendard = localFont({
   src: [
     {
-      path: '../assets/font/pretendard/Pretendard-Thin.woff',
+      path: '../../public/fonts/pretendard/Pretendard-Thin.woff',
       weight: '100'
     },
     {
-      path: '../assets/font/pretendard/Pretendard-ExtraLight.woff',
+      path: '../../public/fonts/pretendard/Pretendard-ExtraLight.woff',
       weight: '200'
     },
     {
-      path: '../assets/font/pretendard/Pretendard-Light.woff',
+      path: '../../public/fonts/pretendard/Pretendard-Light.woff',
       weight: '300'
     },
     {
-      path: '../assets/font/pretendard/Pretendard-Regular.woff',
+      path: '../../public/fonts/pretendard/Pretendard-Regular.woff',
       weight: '400'
     },
     {
-      path: '../assets/font/pretendard/Pretendard-Medium.woff',
+      path: '../../public/fonts/pretendard/Pretendard-Medium.woff',
       weight: '500'
     },
     {
-      path: '../assets/font/pretendard/Pretendard-SemiBold.woff',
+      path: '../../public/fonts/pretendard/Pretendard-SemiBold.woff',
       weight: '600'
     },
     {
-      path: '../assets/font/pretendard/Pretendard-Bold.woff',
+      path: '../../public/fonts/pretendard/Pretendard-Bold.woff',
       weight: '700'
     },
     {
-      path: '../assets/font/pretendard/Pretendard-ExtraBold.woff',
+      path: '../../public/fonts/pretendard/Pretendard-ExtraBold.woff',
       weight: '800'
     },
     {
-      path: '../assets/font/pretendard/Pretendard-Black.woff',
+      path: '../../public/fonts/pretendard/Pretendard-Black.woff',
       weight: '900'
     }
   ],
@@ -81,35 +81,39 @@ const pretendard = localFont({
 const appleGothic = localFont({
   src: [
     {
-      path: '../assets/font/appleGothic/AppleSdGothicNeoUl.ttf',
+      path: '../../public/fonts/appleSDGothicNeo/AppleSdGothicNeoT.ttf',
+      weight: '100'
+    },
+    {
+      path: '../../public/fonts/appleSDGothicNeo/AppleSdGothicNeoUl.ttf',
       weight: '200'
     },
     {
-      path: '../assets/font/appleGothic/AppleSdGothicNeoL.ttf',
+      path: '../../public/fonts/appleSDGothicNeo/AppleSdGothicNeoL.ttf',
       weight: '300'
     },
     {
-      path: '../assets/font/appleGothic/AppleSdGothicNeoM.ttf',
+      path: '../../public/fonts/appleSDGothicNeo/AppleSdGothicNeoM.ttf',
       weight: '400'
     },
     {
-      path: '../assets/font/appleGothic/AppleSdGothicNeoR.ttf',
+      path: '../../public/fonts/appleSDGothicNeo/AppleSdGothicNeoR.ttf',
       weight: '500'
     },
     {
-      path: '../assets/font/appleGothic/AppleSdGothicNeoSB.ttf',
+      path: '../../public/fonts/appleSDGothicNeo/AppleSdGothicNeoSB.ttf',
       weight: '600'
     },
     {
-      path: '../assets/font/appleGothic/AppleSdGothicNeoB.ttf',
+      path: '../../public/fonts/appleSDGothicNeo/AppleSdGothicNeoB.ttf',
       weight: '700'
     },
     {
-      path: '../assets/font/appleGothic/AppleSdGothicNeoEB.ttf',
+      path: '../../public/fonts/appleSDGothicNeo/AppleSdGothicNeoEB.ttf',
       weight: '800'
     },
     {
-      path: '../assets/font/appleGothic/AppleSdGothicNeoH.ttf',
+      path: '../../public/fonts/appleSDGothicNeo/AppleSdGothicNeoH.ttf',
       weight: '900'
     }
   ],

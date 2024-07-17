@@ -1,6 +1,6 @@
 import React from 'react';
 import SwiperContainer from './SwiperContainer';
-import ArrowHandIcon from '@/assets/icons/arrow-hand.svg';
+import ArrowHandIcon from '@icons/arrow-hand.svg';
 const Projects = () => {
   return (
     <section

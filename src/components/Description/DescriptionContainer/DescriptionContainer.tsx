@@ -5,7 +5,7 @@ import DescriptionTitle from '../DescriptionTitle';
 import SubDescription from '../SubDescription';
 import MainDescription from '../MainDescription';
 import MotionSlide from '../../MotionSlide';
-import { DescriptionDataType } from '../../../../../constants/projects';
+import { DescriptionDataType } from '@/constants/projects';
 const DescriptionContainer = ({
   subDescription,
   title,
