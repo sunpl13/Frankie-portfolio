@@ -1,4 +1,4 @@
-import Profile from '@/components/Profile/Profile';
+import Profile from '@/components/Profile';
 import Description from '@/components/Description';
 import Skills from './components/Skills';
 import Blog from './components/Blog';

@@ -81,10 +81,6 @@ const pretendard = localFont({
 const appleGothic = localFont({
   src: [
     {
-      path: '../assets/font/appleGothic/AppleSdGothicNeoT.ttf',
-      weight: '100'
-    },
-    {
       path: '../assets/font/appleGothic/AppleSdGothicNeoUl.ttf',
       weight: '200'
     },
