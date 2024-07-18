@@ -19,7 +19,7 @@ const ImageSection = () => {
           'max-[1892px]:!w-3/10',
           '!w-1/5'
         )}
-        src="/profile_half.png"
+        src="/images/profile_half.png"
         alt="profile_img"
         objectFit="cover"
         loading="lazy"
