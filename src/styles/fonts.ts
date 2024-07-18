@@ -81,40 +81,24 @@ const pretendard = localFont({
 const appleGothic = localFont({
   src: [
     {
-      path: '../../public/fonts/appleSDGothicNeo/AppleSdGothicNeoT.ttf',
+      path: '../../public/fonts/spoqaHanSansNeo/SpoqaHanSansNeo-Thin.ttf',
       weight: '100'
     },
     {
-      path: '../../public/fonts/appleSDGothicNeo/AppleSdGothicNeoUl.ttf',
+      path: '../../public/fonts/spoqaHanSansNeo/SpoqaHanSansNeo-Light.ttf',
       weight: '200'
     },
     {
-      path: '../../public/fonts/appleSDGothicNeo/AppleSdGothicNeoL.ttf',
+      path: '../../public/fonts/spoqaHanSansNeo/SpoqaHanSansNeo-Regular.ttf',
       weight: '300'
     },
     {
-      path: '../../public/fonts/appleSDGothicNeo/AppleSdGothicNeoM.ttf',
+      path: '../../public/fonts/spoqaHanSansNeo/SpoqaHanSansNeo-Medium.ttf',
       weight: '400'
     },
     {
-      path: '../../public/fonts/appleSDGothicNeo/AppleSdGothicNeoR.ttf',
-      weight: '500'
-    },
-    {
-      path: '../../public/fonts/appleSDGothicNeo/AppleSdGothicNeoSB.ttf',
-      weight: '600'
-    },
-    {
-      path: '../../public/fonts/appleSDGothicNeo/AppleSdGothicNeoB.ttf',
+      path: '../../public/fonts/spoqaHanSansNeo/SpoqaHanSansNeo-Bold.ttf',
       weight: '700'
-    },
-    {
-      path: '../../public/fonts/appleSDGothicNeo/AppleSdGothicNeoEB.ttf',
-      weight: '800'
-    },
-    {
-      path: '../../public/fonts/appleSDGothicNeo/AppleSdGothicNeoH.ttf',
-      weight: '900'
     }
   ],
   display: 'swap',

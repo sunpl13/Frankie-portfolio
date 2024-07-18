@@ -15,21 +15,9 @@ import GithubActionIcon from '@icons/github-action-icon.svg';
 import Ec2Icon from '@icons/ec2-icon.svg';
 import JenkinsIcon from '@icons/jenkins-icon.svg';
 import { cn } from '../cn';
+import style from '@/components/Skills/TechStackToken/TechStackToken.module.css';
 type Stack = { stacksName: string; icon: React.ReactElement };
-const iconClassName = cn(
-  '2xl:w-20',
-  '2xl:h-[3rem]',
-  '2xl:w-[3rem]',
-  'xl:w-[2.5rem]',
-  'xl:h-[2.5rem]',
-  'lg:w-[2rem]',
-  'lg:h-[2rem]',
-  'md:w-[1.5rem]',
-  'md:h-[1.5rem]',
-  'text-white',
-  'w-4',
-  'h-4'
-);
+
 const languageStack: Stack[] = [
   {
     stacksName: 'Javascript',
@@ -39,7 +27,7 @@ const languageStack: Stack[] = [
         height="3rem"
         aria-hidden="true"
         focusable="false"
-        className={iconClassName}
+        className={style['svg']}
       />
     )
   },
@@ -51,7 +39,7 @@ const languageStack: Stack[] = [
         height="3rem"
         aria-hidden="true"
         focusable="false"
-        className={iconClassName}
+        className={style['svg']}
       />
     )
   },
@@ -63,7 +51,7 @@ const languageStack: Stack[] = [
         height="3rem"
         aria-hidden="true"
         focusable="false"
-        className={iconClassName}
+        className={style['svg']}
       />
     )
   },
@@ -75,7 +63,7 @@ const languageStack: Stack[] = [
         height="3rem"
         aria-hidden="true"
         focusable="false"
-        className={iconClassName}
+        className={style['svg']}
       />
     )
   }
@@ -90,7 +78,7 @@ const frontendStack: Stack[] = [
         height="3rem"
         aria-hidden="true"
         focusable="false"
-        className={iconClassName}
+        className={style['svg']}
       />
     )
   },
@@ -102,7 +90,7 @@ const frontendStack: Stack[] = [
         height="3rem"
         aria-hidden="true"
         focusable="false"
-        className={iconClassName}
+        className={style['svg']}
       />
     )
   },
@@ -114,7 +102,7 @@ const frontendStack: Stack[] = [
         height="3rem"
         aria-hidden="true"
         focusable="false"
-        className={iconClassName}
+        className={style['svg']}
       />
     )
   },
@@ -126,7 +114,7 @@ const frontendStack: Stack[] = [
         height="3rem"
         aria-hidden="true"
         focusable="false"
-        className={iconClassName}
+        className={style['svg']}
       />
     )
   },
@@ -138,7 +126,7 @@ const frontendStack: Stack[] = [
         height="3rem"
         aria-hidden="true"
         focusable="false"
-        className={iconClassName}
+        className={style['svg']}
       />
     )
   },
@@ -150,7 +138,7 @@ const frontendStack: Stack[] = [
         height="3rem"
         aria-hidden="true"
         focusable="false"
-        className={iconClassName}
+        className={style['svg']}
       />
     )
   },
@@ -162,7 +150,7 @@ const frontendStack: Stack[] = [
         height="3rem"
         aria-hidden="true"
         focusable="false"
-        className={iconClassName}
+        className={style['svg']}
       />
     )
   },
@@ -174,7 +162,7 @@ const frontendStack: Stack[] = [
         height="3rem"
         aria-hidden="true"
         focusable="false"
-        className={iconClassName}
+        className={style['svg']}
       />
     )
   }
@@ -189,7 +177,7 @@ const devOpsStack: Stack[] = [
         height="3rem"
         aria-hidden="true"
         focusable="false"
-        className={iconClassName}
+        className={style['svg']}
       />
     )
   },
@@ -201,7 +189,7 @@ const devOpsStack: Stack[] = [
         height="3rem"
         aria-hidden="true"
         focusable="false"
-        className={iconClassName}
+        className={style['svg']}
       />
     )
   },
@@ -213,7 +201,7 @@ const devOpsStack: Stack[] = [
         height="3rem"
         aria-hidden="true"
         focusable="false"
-        className={iconClassName}
+        className={style['svg']}
       />
     )
   },
@@ -225,7 +213,7 @@ const devOpsStack: Stack[] = [
         height="3rem"
         aria-hidden="true"
         focusable="false"
-        className={iconClassName}
+        className={style['svg']}
       />
     )
   }

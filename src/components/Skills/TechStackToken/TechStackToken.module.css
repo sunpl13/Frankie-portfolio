@@ -2,6 +2,10 @@
   box-shadow: 0 0 0 6px #afafafd2, inset 0 2px #00000014, 0 3px 0 4px #0000000d;
 }
 
+.svg {
+  @apply 2xl:w-20 2xl:h-[3rem] 2xl:w-[3rem] xl:w-[2.5rem] xl:h-[2.5rem] lg:w-[2rem] lg:h-[2rem] md:w-[1.5rem] md:h-[1.5rem] text-white w-6 h-6;
+}
+
 @media (min-width: 768px) {
   .token {
     box-shadow: 0 0 0 3px #afafafd2, inset 0 1px #00000014,
