@@ -4,23 +4,25 @@ import RightArrowIcon from '@icons/arrow-right.svg';
 import Link from 'next/link';
 import { cn } from '@/utils/cn';
 import MotionSlide from '@/components/MotionSlide';
-
+import errorImg from '@images/errors.png';
+import jestImg from '@images/jest.png';
+import mswImg from '@images/MSW.png';
 const BlogContentsContainer = () => {
   const blogData = [
     {
       title:
         "[Jest] The module factory of 'jest.mock()' is not allowed to reference any out-of-scope variables. 오류 해결하기",
-      imgSrc: `${process.env.NEXT_PUBLIC_BLOG_IMG_URL}/oXgAu/btsGO929l1Q/h01K74Vfi2br8xsZ66lidK/img.png`,
+      imgSrc: jestImg,
       link: `${process.env.NEXT_PUBLIC_TISTORY_URL}/61`
     },
     {
       title: 'MSW의 delay infinite는 테스트 성능에 이상이 없을까?',
-      imgSrc: `${process.env.NEXT_PUBLIC_BLOG_IMG_URL}/xBcVp/btsGuplxipO/8i1xJlPnDXlKKEpAszIK51/img.png`,
+      imgSrc: mswImg,
       link: `${process.env.NEXT_PUBLIC_TISTORY_URL}/60`
     },
     {
       title: 'MSW의 delay infinite는 테스트 성능에 이상이 없을까?',
-      imgSrc: `${process.env.NEXT_PUBLIC_BLOG_IMG_URL}/LTSzb/btsFm3XSE4k/FynOak49KPJWNw8hUp2sa1/img.png`,
+      imgSrc: errorImg,
       link: `${process.env.NEXT_PUBLIC_TISTORY_URL}/59`
     }
   ];
