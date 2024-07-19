@@ -11,10 +11,10 @@ const TwoCircle = ({ koTitle, enTitle }: Props) => {
       className={cn(
         'relative',
         'border-[1.5px]',
-        '2xl:w-[25rem]',
+        '2xl:w-[29rem]',
         'lg:w-[18.75rem]',
         'md:w-[15.625rem]',
-        '2xl:h-[25rem]',
+        '2xl:h-[29rem]',
         'lg:h-[18.75rem]',
         'md:h-[15.625rem]',
         'h-[15.625rem]',
@@ -25,10 +25,10 @@ const TwoCircle = ({ koTitle, enTitle }: Props) => {
       )}>
       <div
         className={cn(
-          '2xl:w-[23rem]',
+          '2xl:w-[26rem]',
           'lg:w-[16.625rem]',
           'md:w-[13.625rem]',
-          '2xl:h-[23rem]',
+          '2xl:h-[26rem]',
           'lg:h-[16.625rem]',
           'md:h-[13.625rem]',
           'h-[13.625rem]',
@@ -56,11 +56,12 @@ const TwoCircle = ({ koTitle, enTitle }: Props) => {
             '2xl:text-4xl',
             'lg:text-2xl',
             'xl:text-3xl',
-            'md:text-xl'
+            'md:text-xl',
+            'font-pretendard'
           )}>
           {enTitle}
         </strong>
-        <span className={cn('text-2xl')}>{koTitle}</span>
+        <span className={cn('text-2xl', 'font-pretendard')}>{koTitle}</span>
       </div>
     </div>
   );

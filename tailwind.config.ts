@@ -20,6 +20,7 @@ const config: Config = {
         appleGothic: 'var(--font-apple-gothic-neo)'
       },
       colors: {
+        'green-60': 'rgba(155, 254, 3, 0.6)',
         'green-100': '#98f211',
         'gray-40': 'rgba(255, 255, 255, 0.4)',
         'gray-60': 'rgba(240, 240, 240, 0.6)',
@@ -27,8 +28,7 @@ const config: Config = {
         'gray-50': 'rgba(240, 240, 240, 0.5)',
         'gray-90': 'rgba(240, 240, 240, 0.9)',
         'black-80': '#363636',
-        'base-dark': '#191919',
-        'green-60': 'rgba(155, 254, 3, 0.6)'
+        'base-dark': '#191919'
       },
       screens: {
         '3xl': '1920px'

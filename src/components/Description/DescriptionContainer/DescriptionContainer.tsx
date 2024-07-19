@@ -17,7 +17,6 @@ const DescriptionContainer = ({
       className={cn(
         'bg-base-dark',
         'text-white',
-        'font-pretendard',
         'flex',
         'items-center',
         'description'
@@ -30,7 +29,8 @@ const DescriptionContainer = ({
           'flex-col',
           'min-[640px]:gap-y-40',
           'max-[639px]:items-center',
-          'max-[639px]:text-center'
+          'max-[639px]:text-center',
+          'font-pretendard'
         )}>
         <div className={cn('min-[640px]:flex', 'min-[640px]:justify-around')}>
           <DescriptionTitle motto="성과를 그리는" role="Front-End Engineer" />

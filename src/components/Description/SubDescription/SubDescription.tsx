@@ -19,7 +19,8 @@ const SubDescription = ({ subDescription }: Props) => {
         'xl:[29.375rem]',
         'lg:w-[29.375rem]',
         'md:w-[26.25rem]',
-        'pt-3'
+        'pt-3',
+        'font-pretendard'
       )}>
       {subDescription}
     </p>
