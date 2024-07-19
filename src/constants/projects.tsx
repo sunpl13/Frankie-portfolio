@@ -143,14 +143,5 @@ export const experiences = [
     date: 'Nov 2022 - Mar 2024',
     description:
       '다양한 플랫폼과 다양한 기기를 통해 <br/> 문서 작업이 가능한 오피스 소프트웨어 전문 기업'
-  },
-  {
-    title: 'Front-End Developer',
-    company_name: '클래스팅',
-    icon: classtingLogo,
-    iconBg: '#333333',
-    date: 'Mar 2024 - Jun 2024',
-    description:
-      '교사와 학생, 학부모를 위한 AI 기반 학습관리 시스템을 제공하는 교육 플랫폼 스타트업'
   }
 ];

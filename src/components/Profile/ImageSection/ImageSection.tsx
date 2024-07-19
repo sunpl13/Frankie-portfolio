@@ -19,10 +19,10 @@ const ImageSection = () => {
           'max-[1892px]:!w-3/10',
           '!w-1/5'
         )}
-        src="/images/profile_half.png"
+        src="/images/profile_half.webp"
         alt="profile_img"
         objectFit="cover"
-        loading="lazy"
+        priority
         fill={true}
         quality={100}
       />
