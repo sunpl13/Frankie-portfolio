@@ -57,7 +57,7 @@ const Summary = () => {
               </li>
               <li>
                 <Link
-                  href="https://github.com/sunpl13"
+                  href="https://sunpl13.tistory.com"
                   target="_blank"
                   className="underline">
                   TECH BLOG
