@@ -4,11 +4,16 @@ import RightArrowIcon from '@icons/arrow-right.svg';
 import Link from 'next/link';
 import { cn } from '@/utils/cn';
 import MotionSlide from '@/components/MotionSlide';
-import errorImg from '@images/errors.png';
+import logoImg from '@images/blog_logo.png';
 import jestImg from '@images/jest.png';
 import mswImg from '@images/MSW.png';
 const BlogContentsContainer = () => {
   const blogData = [
+    {
+      title: '내 사이트 성능 개선하기',
+      imgSrc: logoImg,
+      link: `${process.env.NEXT_PUBLIC_TISTORY_URL}/62`
+    },
     {
       title:
         "[Jest] The module factory of 'jest.mock()' is not allowed to reference any out-of-scope variables. 오류 해결하기",
@@ -19,11 +24,6 @@ const BlogContentsContainer = () => {
       title: 'MSW의 delay infinite는 테스트 성능에 이상이 없을까?',
       imgSrc: mswImg,
       link: `${process.env.NEXT_PUBLIC_TISTORY_URL}/60`
-    },
-    {
-      title: 'MSW의 delay infinite는 테스트 성능에 이상이 없을까?',
-      imgSrc: errorImg,
-      link: `${process.env.NEXT_PUBLIC_TISTORY_URL}/59`
     }
   ];
 
