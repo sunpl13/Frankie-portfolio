@@ -14,7 +14,6 @@ import GitIcon from '@icons/git-icon.svg';
 import GithubActionIcon from '@icons/github-action-icon.svg';
 import Ec2Icon from '@icons/ec2-icon.svg';
 import JenkinsIcon from '@icons/jenkins-icon.svg';
-import { cn } from '../cn';
 import style from '@/components/Skills/TechStackToken/TechStackToken.module.css';
 type Stack = { stacksName: string; icon: React.ReactElement };
 
