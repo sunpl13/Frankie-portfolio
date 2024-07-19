@@ -21,10 +21,8 @@ const ImageSection = () => {
         )}
         src="/images/profile_half.webp"
         alt="profile_img"
-        objectFit="cover"
-        priority
+        priority={true}
         fill={true}
-        quality={100}
       />
       <HalfCircle />
     </div>

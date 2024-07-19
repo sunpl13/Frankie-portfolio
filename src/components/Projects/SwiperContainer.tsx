@@ -107,6 +107,7 @@ const SwiperContainer = () => {
                 placeholder="blur"
                 quality={100}
                 fill
+                loading="lazy"
                 sizes="100%"
                 style={{
                   objectFit: 'cover'

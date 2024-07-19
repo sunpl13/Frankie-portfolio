@@ -94,7 +94,6 @@ const BlogContentsContainer = () => {
                   href={link}
                   target="_blank">
                   <Image
-                    priority={true}
                     width={0}
                     height={0}
                     sizes="100vw"
@@ -103,6 +102,7 @@ const BlogContentsContainer = () => {
                       aspectRatio: '8 / 5',
                       overflow: 'hidden'
                     }}
+                    loading="lazy"
                     src={imgSrc}
                     alt={title}
                   />
