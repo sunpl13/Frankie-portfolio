@@ -3,6 +3,7 @@ import { VerticalTimelineElement } from 'react-vertical-timeline-component';
 import portFolioImg from '@images/portfolio.png';
 import DownloadIcon from '@icons/download.svg';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const PortfolioButton = () => {
   return (
@@ -33,7 +34,11 @@ const PortfolioButton = () => {
           </div>
         </div>
       }>
-      <button
+      <Link
+        href="/portfolio.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        download={true}
         className="flex justify-between
         sm:text-[18px] text-[14px] text-[#707359]
         font-bold items-center py-5 px-3
@@ -44,7 +49,7 @@ const PortfolioButton = () => {
         ease-in-out">
         MY PortFolio
         <DownloadIcon />
-      </button>
+      </Link>
     </VerticalTimelineElement>
   );
 };

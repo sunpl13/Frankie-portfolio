@@ -63,6 +63,14 @@ const Summary = () => {
                   TECH BLOG
                 </Link>
               </li>
+              <li>
+                <Link
+                  href={`${process.env.NEXT_PUBLIC_NOTION_URL}/5f295ae50e334cf28426a06ec602b36a?pvs=4`}
+                  target="_blank"
+                  className="underline">
+                  MORE INFO
+                </Link>
+              </li>
             </ul>
           </MotionSlide>
         </footer>

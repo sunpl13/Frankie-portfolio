@@ -3,6 +3,7 @@ import { VerticalTimelineElement } from 'react-vertical-timeline-component';
 import resumeImg from '@images/resume.png';
 import DownloadIcon from '@icons/download.svg';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const ResumeButton = () => {
   return (
@@ -33,7 +34,11 @@ const ResumeButton = () => {
           </div>
         </div>
       }>
-      <button
+      <Link
+        href="/resume.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        download={true}
         className="flex justify-between
         sm:text-[18px] text-[14px] text-[#707359]
         font-bold items-center py-5 px-3
@@ -44,7 +49,7 @@ const ResumeButton = () => {
         ease-in-out">
         MY RESUME
         <DownloadIcon />
-      </button>
+      </Link>
     </VerticalTimelineElement>
   );
 };
