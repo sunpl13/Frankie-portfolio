@@ -1,19 +1,21 @@
 'use client';
 import { motion, useInView, useAnimation } from 'framer-motion';
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect, ElementType } from 'react';
 
 type Props = {
   children: React.ReactNode;
   className?: string;
   delay?: number;
   translateDirection?: 'x' | 'y';
+  as?: ElementType;
 };
 
 const MotionSlide = ({
   children,
   delay,
   className,
-  translateDirection = 'x'
+  translateDirection = 'x',
+  as: Component = 'div'
 }: Props) => {
   const ref = useRef(null);
   const isInview = useInView(ref, { once: true });
@@ -28,8 +30,12 @@ const MotionSlide = ({
     }
   }, [isInview, controls]);
 
+  const MotionComponent = motion[
+    Component as keyof typeof motion
+  ] as ElementType;
+
   return (
-    <motion.div
+    <MotionComponent
       ref={ref}
       variants={{
         hidden: { opacity: 0, ...directionHidden },
@@ -46,7 +52,7 @@ const MotionSlide = ({
       animate={controls}
       className={className}>
       {children}
-    </motion.div>
+    </MotionComponent>
   );
 };
 

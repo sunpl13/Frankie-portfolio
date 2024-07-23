@@ -38,7 +38,6 @@ const SwiperContainer = () => {
       <Swiper
         className={cn('max-w-[90%]', 'lg:max-w-[80%]')}
         freeMode={true}
-        pagination={{ clickable: true }}
         modules={[FreeMode, Pagination, Autoplay, A11y]}
         slidesPerView={1}
         spaceBetween={15}

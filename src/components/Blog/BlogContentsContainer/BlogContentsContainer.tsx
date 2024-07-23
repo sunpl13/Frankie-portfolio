@@ -76,38 +76,39 @@ const BlogContentsContainer = () => {
         />
         <ul className="flex justify center gap-8 max-sm:flex-col">
           {blogData.map(({ link, imgSrc, title }, index) => (
-            <MotionSlide className="z-10" key={link} delay={(index + 1) * 0.5}>
-              <li
-                className={cn(
-                  '2xl:w-96',
-                  '2xl:h-60',
-                  'z-10',
-                  'xl:w-80',
-                  'xl:h-[12.5rem]',
-                  'lg:w-72',
-                  'lg:h-[11.25rem]',
-                  'w-52',
-                  'h-[8.125rem]'
-                )}>
-                <Link
-                  className="block w-full h-full rounded-lg overflow-hidden"
-                  href={link}
-                  target="_blank">
-                  <Image
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    style={{
-                      width: '100%',
-                      aspectRatio: '8 / 5',
-                      overflow: 'hidden'
-                    }}
-                    loading="lazy"
-                    src={imgSrc}
-                    alt={title}
-                  />
-                </Link>
-              </li>
+            <MotionSlide
+              as="li"
+              className={cn(
+                '2xl:w-96',
+                '2xl:h-60',
+                'z-10',
+                'xl:w-80',
+                'xl:h-[12.5rem]',
+                'lg:w-72',
+                'lg:h-[11.25rem]',
+                'w-52',
+                'h-[8.125rem]'
+              )}
+              key={link}
+              delay={(index + 1) * 0.5}>
+              <Link
+                className="block w-full h-full rounded-lg overflow-hidden"
+                href={link}
+                target="_blank">
+                <Image
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  style={{
+                    width: '100%',
+                    aspectRatio: '8 / 5',
+                    overflow: 'hidden'
+                  }}
+                  loading="lazy"
+                  src={imgSrc}
+                  alt={title}
+                />
+              </Link>
             </MotionSlide>
           ))}
         </ul>

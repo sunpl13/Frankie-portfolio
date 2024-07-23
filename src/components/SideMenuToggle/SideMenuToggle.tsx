@@ -21,6 +21,8 @@ const Path = (props: MotionProps | PathProps) => (
 const SideMenuToggle = ({ setToggle }: SideMenuToggleProps) => {
   return (
     <button
+      aria-label="사이드바 열기"
+      role="button"
       className={cn(
         'outline-none',
         'border-none',
