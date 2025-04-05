@@ -5,25 +5,24 @@ import Link from 'next/link';
 import { cn } from '@/utils/cn';
 import MotionSlide from '@/components/MotionSlide';
 import logoImg from '@images/blog_logo.png';
-import jestImg from '@images/jest.png';
-import mswImg from '@images/MSW.png';
+import bundleImg from '@images/bundle.webp';
+import nextImg from '@images/next_logo.webp';
 const BlogContentsContainer = () => {
   const blogData = [
     {
-      title: '내 사이트 성능 개선하기(2)',
-      imgSrc: logoImg,
-      link: `${process.env.NEXT_PUBLIC_TISTORY_URL}/63`
+      title: '[Vite] Bundle 사이즈 최적화 하기',
+      imgSrc: bundleImg,
+      link: `${process.env.NEXT_PUBLIC_TISTORY_URL}/66`
     },
     {
-      title: '내 사이트 성능 개선하기',
+      title: 'iOS 15 Input 입력 안되는 이슈 해결기',
       imgSrc: logoImg,
-      link: `${process.env.NEXT_PUBLIC_TISTORY_URL}/62`
+      link: `${process.env.NEXT_PUBLIC_TISTORY_URL}/65`
     },
     {
-      title:
-        "[Jest] The module factory of 'jest.mock()' is not allowed to reference any out-of-scope variables. 오류 해결하기",
-      imgSrc: jestImg,
-      link: `${process.env.NEXT_PUBLIC_TISTORY_URL}/61`
+      title: 'Next.js AWS EC2에 배포하기(1)',
+      imgSrc: nextImg,
+      link: `${process.env.NEXT_PUBLIC_TISTORY_URL}/64`
     }
   ];
 
